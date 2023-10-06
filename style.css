@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(0.30turn, #FFDA9A 10%, #FEB1D1, #FB92FD, #E092FE, #CF91FF, #BA91FE, #A795FF, #90ACFE, #82BCFC, #64DFFF);
+}
+
+.ponies_png{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
