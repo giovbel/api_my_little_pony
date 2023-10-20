@@ -7,14 +7,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
     <script src="./aula03.js" defer></script>
     <title>My little pony</title>
 </head>
 <body>
     <header>
         
-        <a href=""><img class="icone" src="./img/icone.png"></a>
-        <a href=""><img class="github" id="github" src="./img/github.png"></a>
+        <img class="icone" id="icone" src="./img/icone.png">
+        <div class="links" id="links">
+
+            <a href="https://github.com/giovbel?tab=repositories"><img class="github" id="github" src="./img/github.png"></a>
+            <div class= "gitGi"><p>@giovbel</p></div>
+
+            <a href="https://ponyapi.net/"><img class="api" id="api" src="./img/api.png"></a>
+            <div class="apiName"><p>Pony.api</p></div>
+        </div>
+       
+
     </header>
     <div class="ponies_png">
         <img class="img1" src="./img/ponies on main.png" alt="">
@@ -23,7 +33,7 @@
         <img class="img2" src= "./img/logo.png" alt="">
     </main>
     <footer>
-        <a class="comics_button">Comics<br>Story</a>
+        <a href="comics.html" class="comics_button">Comics<br>Story</a>
         <a class="characters_button">Character's</a>
         <a class="episodes_button">Episodes</a>
     </footer>

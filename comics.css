@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font: 'Irish Grover', cursive;
+}
+
+body {
+    font-family: var(--font);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(0.30turn, #FFDA9A 10%, #FEB1D1, #FB92FD, #E092FE, #CF91FF, #BA91FE, #A795FF, #90ACFE, #82BCFC, #64DFFF);
+}
+
+header{
+    height: 14vh;
+    width: 100vw;
+    background-color: #AE347E;
+    display: flex;
+    align-items: center;
+}
+    
+
+.backHouse{
+    cursor: pointer;
+    height: 65%;
+    display: flex;
+    padding-left: 30px;
+    gap: 10px;
+}
+
+.backHouse img{
+    height: 90%;
+}
+
+h1{
+    align-self: center;
+    color: white;
+    font-size: 15px;
+}

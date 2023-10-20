@@ -12,8 +12,11 @@ body {
     font-family: var(--font);
     height: 100vh;
     width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
     background: linear-gradient(0.30turn, #FFDA9A 10%, #FEB1D1, #FB92FD, #E092FE, #CF91FF, #BA91FE, #A795FF, #90ACFE, #82BCFC, #64DFFF);
 }
+
 
 header img{
     cursor: pointer;
@@ -47,17 +50,60 @@ header img{
     z-index: 9999;
 }
 
+.gitGi{
+    color: #820896;
+    position: fixed;
+    right: 115px;
+    font-size: 11px;
+}
+
+.apiName{
+    color: #820896;
+    position: fixed;
+    right: 14%;
+    height: 9%;
+    font-size: 11px;
+}
+
 .github{
-    display: none;
+    display: flex;
     cursor: pointer;
     position: fixed;
     top: 0;
     right: 95px;
-    margin: 16px;
-    height: 8%;
+    margin: 20px;
+    height: 7%;
     z-index: 9999;
 }
 
+
+a{
+    text-decoration: none;
+}
+
+.characters_button:hover {
+    background-image: url(./img/sparkle.gif);
+    color: black; 
+}
+
+.api{
+    display: flex;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 158px;
+    margin: 15px;
+    height: 9.5%;
+    z-index: 9999;
+}
+
+.links{
+    display: none;
+}
+
+.mostrar{
+    display: flex;
+}
 
 footer{
     display: flex;
