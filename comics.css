@@ -43,3 +43,22 @@ h1{
     color: white;
     font-size: 15px;
 }
+
+.pesquisaBarra{
+    display: flex;
+    padding-left: 20%;
+}
+
+input{
+    font-family: var(--font);
+    padding-left: 4%;
+    height: 6vh;
+    width: 40vw;
+    border-radius: 50px;
+}
+
+.lupinha{
+    padding-left: 8px;
+    height: 16px;
+    place-self: center;
+}
