@@ -53,14 +53,14 @@ header img{
 .gitGi{
     color: #820896;
     position: fixed;
-    right: 115px;
+    right: 150px;
     font-size: 11px;
 }
 
 .apiName{
     color: #820896;
     position: fixed;
-    right: 14%;
+    right: 12.5%;
     height: 9%;
     font-size: 11px;
 }
@@ -70,7 +70,7 @@ header img{
     cursor: pointer;
     position: fixed;
     top: 0;
-    right: 95px;
+    right: 120px;
     margin: 20px;
     height: 7%;
     z-index: 9999;
@@ -91,7 +91,7 @@ a{
     cursor: pointer;
     position: fixed;
     top: 0;
-    right: 158px;
+    right: 200px;
     margin: 15px;
     height: 9.5%;
     z-index: 9999;
