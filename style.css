@@ -4,17 +4,19 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'my-little-pony';
-    src: url('my-little-pony/PONY\ -\ MLP\ 2\ -\ Version\ Definitiva\ 6\ -\ Kustren.ttf') format('ttf'),
-         url('my-little-pony/PONY\ -\ MLP\ 2\ -\ Version\ 2.ttf') format('ttf');
+:root{
+    --font: 'Irish Grover', cursive;
 }
 
 body {
-    font-family: 'my-little-pony', sans-serif;
+    font-family: var(--font);
     height: 100vh;
     width: 100vw;
     background: linear-gradient(0.30turn, #FFDA9A 10%, #FEB1D1, #FB92FD, #E092FE, #CF91FF, #BA91FE, #A795FF, #90ACFE, #82BCFC, #64DFFF);
+}
+
+header img{
+    cursor: pointer;
 }
 
 .ponies_png {
@@ -35,13 +37,27 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.icone{
+.icone {
+    cursor: pointer;
     position: fixed;
     top: 0;
     right: 0;
     margin: 10px;
     height: 12%;
+    z-index: 9999;
 }
+
+.github{
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 95px;
+    margin: 16px;
+    height: 8%;
+    z-index: 9999;
+}
+
 
 footer{
     display: flex;
@@ -51,6 +67,7 @@ footer{
 }
 
 .comics_button {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,12 +75,19 @@ footer{
     width: 14vw;
     height: 13vh;
     font-size: 25px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: #820896;
     background-color: #FFE5F5;
+    transition: color 0.3s; 
+}
+
+.comics_button:hover {
+    background-image: url(./img/sparkle.gif);
+    color: black; 
 }
 
 .characters_button {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,12 +95,20 @@ footer{
     width: 14vw;
     height: 13vh;
     font-size: 25px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: #820896;
     background-color: #FFE5F5;
+    transition: color 0.3s; 
+}
+
+
+.characters_button:hover {
+    background-image: url(./img/sparkle.gif);
+    color: black; 
 }
 
 .episodes_button {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,7 +116,13 @@ footer{
     width: 14vw;
     height: 13vh;
     font-size: 25px;
-    border-radius: 20px;
+    border-radius: 10px;
     color: #820896;
     background-color: #FFE5F5;
+    transition: color 0.3s; 
+}
+
+.episodes_button:hover {
+    background-image: url(./img/sparkle.gif);
+    color: black; 
 }
