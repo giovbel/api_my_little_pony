@@ -93,8 +93,8 @@ h2{
     display: flex;
     flex-direction: column;
     border-radius: 20px;
-    height: 32vh;
-    width: 15vw;
+    height: 250px;
+    width: 250px;
     background-color: #F6D3F6;
 }
 
@@ -104,12 +104,12 @@ h2{
 }
 
 .container:hover{
-    height: 55vh;
+    height: 350px;
 }
 
 .types{
     padding-top: 10px;
-    width: 60%;
+    height: 153px;
 }
 
 span{
