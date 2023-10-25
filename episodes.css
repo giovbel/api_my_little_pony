@@ -13,12 +13,11 @@ body {
     height: 100vh;
     width: 100vw;
     background-repeat: no-repeat;
-    background-size: cover;
     background: linear-gradient(0.30turn, #FFDA9A 10%, #FEB1D1, #FB92FD, #E092FE, #CF91FF, #BA91FE, #A795FF, #90ACFE, #82BCFC, #64DFFF);
 }
 
 header{
-    height: 14vh;
+    height: 12vh;
     width: 100vw;
     background-color: #AE347E;
     display: flex;
@@ -45,11 +44,19 @@ h1{
 }
 
 .pesquisaBarra{
+    border: transparent;
     display: flex;
     padding-left: 20%;
 }
 
+.pesquisaBarra:focus{
+    outline-style: none;
+}
+
+
 input{
+    font-size: 18px;
+    border: transparent;
     font-family: var(--font);
     padding-left: 4%;
     height: 6vh;

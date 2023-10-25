@@ -50,21 +50,6 @@ header img{
     z-index: 9999;
 }
 
-.gitGi{
-    color: #820896;
-    position: fixed;
-    right: 150px;
-    font-size: 11px;
-}
-
-.apiName{
-    color: #820896;
-    position: fixed;
-    right: 12.5%;
-    height: 9%;
-    font-size: 11px;
-}
-
 .github{
     display: flex;
     cursor: pointer;
