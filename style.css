@@ -26,7 +26,7 @@ header img{
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 80%;
+    height: 70%;
     position: relative;
     top: 2%;
 }
@@ -50,17 +50,21 @@ header img{
     z-index: 9999;
 }
 
+
+.logoGit{
+    height: 30px;
+}
+
 .github{
     display: flex;
     cursor: pointer;
     position: fixed;
-    top: 0;
-    right: 120px;
-    margin: 20px;
-    height: 7%;
+    top: 10px;
+    right: 100px;
     z-index: 9999;
+    align-items: center;
+    text-align: center;
 }
-
 
 a{
     text-decoration: none;
@@ -69,17 +73,6 @@ a{
 .characters_button:hover {
     background-image: url(./img/sparkle.gif);
     color: black; 
-}
-
-.api{
-    display: flex;
-    cursor: pointer;
-    position: fixed;
-    top: 0;
-    right: 200px;
-    margin: 15px;
-    height: 9.5%;
-    z-index: 9999;
 }
 
 .links{
@@ -91,10 +84,11 @@ a{
 }
 
 footer{
+    padding-top: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10%;
+    gap: 6%;
 }
 
 .comics_button {
