@@ -9,31 +9,47 @@
 }
 
 body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: var(--font);
     height: 100vh;
     width: 100vw;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background: linear-gradient(0.30turn, #FFDA9A 10%, #FEB1D1, #FB92FD, #E092FE, #CF91FF, #BA91FE, #A795FF, #90ACFE, #82BCFC, #64DFFF);
 }
 
+.sumir{
+    display: none;
+}
+
 header{
-    height: 12vh;
-    width: 100vw;
+    height: 25vh;
     display: flex;
     align-items: center;
+    gap: 10px;
 }
     
+
+.home{
+    height: 10px;
+}
+
 
 .backHouse{
     cursor: pointer;
     height: 60%;
     display: flex;
-    padding-left: 30px;
     gap: 10px;
+    padding-left: 30px;
+    padding-bottom: 0px;
 }
 
 .backHouse img{
-    height: 120%;
+    cursor: pointer;
+    height: 50%;
 }
 
 h1{
@@ -71,19 +87,20 @@ input{
     place-self: center;
 }
 
-.comics{
-    padding: 30px 0px 0px 0px;
-    display: flex;
-    gap: 50px;
-    text-align: center;
-    justify-content: center;
+.titleEbar, .pesquisaBarra {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding-left: 120px;
 }
+
 
 h2{
     color: #3A3232;
     display: flex;
     justify-content: center;
     font-size: 60px;
+    padding-left: 50px;
 }
 
 main{
@@ -127,5 +144,11 @@ footer{
     display: flex;
     justify-content: center;
     height: 40vh;
+}
+
+.cardEpisode {
+    background-color: #FFC3C3;
+    height: 150px;
+    width: 250px;
 }
 

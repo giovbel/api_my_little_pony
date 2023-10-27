@@ -7,3 +7,6 @@ function pesquisa(){
 }
 
 barSearch.addEventListener('click', pesquisa)
+
+// ---------------------------------------------------- 
+
