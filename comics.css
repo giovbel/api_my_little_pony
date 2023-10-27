@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,31 +9,42 @@
 }
 
 body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: var(--font);
-    height: 100vh;
+    height: 100%;
     width: 100vw;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background: linear-gradient(0.30turn, #FFDA9A 10%, #FEB1D1, #FB92FD, #E092FE, #CF91FF, #BA91FE, #A795FF, #90ACFE, #82BCFC, #64DFFF);
 }
 
 header{
-    height: 12vh;
-    width: 100vw;
+    height: 30vh;
     display: flex;
     align-items: center;
+    gap: 150px;
 }
     
+
+.home{
+    height: 10px;
+}
+
 
 .backHouse{
     cursor: pointer;
     height: 60%;
     display: flex;
-    padding-left: 30px;
     gap: 10px;
+    padding-left: 30px;
 }
 
 .backHouse img{
-    height: 120%;
+    cursor: pointer;
+    height: 50%;
 }
 
 h1{
@@ -71,13 +82,6 @@ input{
     place-self: center;
 }
 
-.comics{
-    padding: 30px 0px 0px 0px;
-    display: flex;
-    gap: 50px;
-    text-align: center;
-    justify-content: center;
-}
 
 h2{
     color: #3A3232;
@@ -86,10 +90,26 @@ h2{
     font-size: 60px;
 }
 
+
+.comics {
+    padding: 30px 0px; 
+    display: grid;
+    grid-template-columns: repeat(5, 0.1fr);
+    gap: 50px;
+    text-align: center;
+    justify-content: center;
+}
+
+
 .card-story{
-    background-color: #FFDDDD;
+    cursor: pointer;
     height: 195px;
     width: 135px;
+
+}
+
+.card-story img{
+    height: 200px;
 }
 
 .storys p{
@@ -97,10 +117,48 @@ h2{
     display: flex;
     padding: 5px;
     font-size: 18px;
+    transition: transform 0.1s ease;
 }
+
+.storys:hover{
+    transform: scale(1.1);
+}
+
 
 h3{
     padding: 5px;
     font-size: 25px;
     color: #150052;
 }
+
+ main {
+    overflow-y: auto;
+    height: 450px; 
+} 
+
+
+ .pesquisaBarra {
+    
+    position: sticky;
+    top: 0;
+    z-index: 100; 
+} 
+
+
+.titleEbar, .pesquisaBarra {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding-left: 50px;
+}
+
+.storys {
+    position: relative;
+    transition: transform 0.1s ease;
+    z-index: 1;
+}
+
+.main:hover .storys {
+    transform: scale(1.1);
+    z-index: 2;
+} 
