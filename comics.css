@@ -47,6 +47,7 @@ header{
     height: 100%;
     place-content: start;
     display: grid;
+    transform: translateY(-60px);
 }
 
 .infoComic{
@@ -61,6 +62,7 @@ header{
 .titleCard{
     color: #359EB4;
     font-size: 40px;
+    padding-bottom: 20px;
     text-shadow: 1px solid black;
     -webkit-text-stroke-width: 0.1px; 
     -webkit-text-stroke-color: #000; 
@@ -76,7 +78,7 @@ p{
 }
 
 .sumir{
-    display: none;
+    
 }
 
 .backHouse img{
@@ -161,6 +163,9 @@ h2{
     transform: scale(1.1);
 }
 
+.sumir{
+    display: none;
+}
 
 h3{
     padding: 5px;
@@ -170,7 +175,7 @@ h3{
 
  main {
     overflow-y: auto;
-    height: 500px; 
+    height: 650px; 
     display: grid;
     place-content: center;
 } 
