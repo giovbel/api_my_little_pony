@@ -12,9 +12,49 @@ async function getComics(){
 
 }
 
+// const mostrarInfoComics = function(comic){
+
+//     console.log("aooosaso")
+
+//     const infoComic = document.getElementById('storysComic')
+
+//     const sumir = document.createElement('div')
+//     sumir.classList.remove("sumir")
+
+//     const imageId = document.createElement('div')
+//     imageId.classList.add("imgEid")
+    
+
+//     const imageCapa = document.createElement('img')
+//     imageCapa.src = comic.image
+
+//     const idStory = document.createElement('h4')
+//     idStory.textContent = comic.id
+
+//     const infoCard = document.createElement('div')
+//     infoCard.classList.add("info")
+
+//     const nameComic = document.createElement('h1')
+//     nameComic.textContent = comic.name
+
+//     const serieComic = document.createElement('p')
+//     serieComic.textContent = comic.series
+
+//     const infoStory = document.createElement('p')
+//     infoStory.textContent = `author: ${comic.writer}  artist: ${comic.artist} colorist: ${comic.colorist} letterer: ${comic.letterer} editor: ${comic.editor} issue: ${comic.issue}`
+    
+
+//     imageId.replaceChildren(imageCapa, idStory)
+//     infoCard.replaceChildren(nameComic, serieComic, infoStory)
+//     infoComic.replaceChildren(imageId, infoCard)
+
+// }
+
 
 const criarCards = function(comic){
     const comicsContainer = document.getElementById('comics')
+
+    
 
     const card = document.createElement("div")
     card.classList.add("storys")
@@ -31,6 +71,7 @@ const criarCards = function(comic){
     const titleComic = document.createElement('p')
     titleComic.textContent = comic.name
 
+
     const idComic = document.createElement('h3')
     idComic.textContent = comic.id
     
@@ -38,44 +79,47 @@ const criarCards = function(comic){
     card.replaceChildren(cardStory, titleComic, idComic)
     comicsContainer.appendChild(card)
 
-    cardStory.addEventListener ('click', mostrarInfoComics(comic))
+    cardStory.addEventListener ('click', function(){
+
+        console.log(comic.name)
+
+        const comicsContainer = document.getElementById('comics')
+        comicsContainer.classList.add("sumir")
+    
+        const infoComic = document.getElementById('storysComic')
+
+        infoComic.classList.remove("sumir")
+    
+        const imageId = document.createElement('div')
+        imageId.classList.add("imgEid")
+        
+    
+        const imageCapa = document.createElement('img')
+        imageCapa.src = comic.image
+    
+        const idStory = document.createElement('h4')
+        idStory.textContent = comic.id
+    
+        const infoCard = document.createElement('div')
+        infoCard.classList.add("info")
+    
+        const nameComic = document.createElement('h1')
+        nameComic.textContent = comic.name
+    
+        const serieComic = document.createElement('p')
+        serieComic.textContent = comic.series
+    
+        const infoStory = document.createElement('p')
+        infoStory.textContent = `author: ${comic.writer}  artist: ${comic.artist} colorist: ${comic.colorist} letterer: ${comic.letterer} editor: ${comic.editor} issue: ${comic.issue}`
+        
+    
+        imageId.replaceChildren(imageCapa, idStory)
+        infoCard.replaceChildren(nameComic, serieComic, infoStory)
+        infoComic.replaceChildren(imageId, infoCard)
+    
+    })
 }
 
-const mostrarInfoComics = function(comic){
-
-    const infoComic = document.getElementById('storysComic')
-
-    const sumir = document.createElement('div')
-    sumir.classList.remove("sumir")
-
-    const imageId = document.createElement('div')
-    imageId.classList.add("imgEid")
-    
-
-    const imageCapa = document.createElement('img')
-    imageCapa.src = comic.image
-
-    const idStory = document.createElement('h4')
-    idStory.textContent = comic.id
-
-    const infoCard = document.createElement('div')
-    infoCard.classList.add("info")
-
-    const nameComic = document.createElement('h1')
-    nameComic.textContent = comic.name
-
-    const serieComic = document.createElement('p')
-    serieComic.textContent = comic.series
-
-    const infoStory = document.createElement('p')
-    infoStory.textContent = `author: ${comic.writer}  artist: ${comic.artist} colorist: ${comic.colorist} letterer: ${comic.letterer} editor: ${comic.editor} issue: ${comic.issue}`
-    
-
-    imageId.replaceChildren(imageCapa, idStory)
-    infoCard.replaceChildren(nameComic, serieComic, infoStory)
-    infoComic.replaceChildren(imageId, infoCard)
-
-}
 
 async function loadComics(){
 
@@ -87,7 +131,6 @@ async function loadComics(){
 
 }
 loadComics()
-getComics()
 
 //------------------------------------------------------------------
 
