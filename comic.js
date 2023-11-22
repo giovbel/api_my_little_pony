@@ -65,6 +65,7 @@ const criarCards = function(comic){
 
     const imgCapa = document.createElement('img')
     cardStory.appendChild(imgCapa)
+    imgCapa.classList.add("capaComic")
     imgCapa.src = comic.image
 
 
@@ -95,6 +96,7 @@ const criarCards = function(comic){
         
     
         const imageCapa = document.createElement('img')
+        imageCapa.classList.add("capaComic")
         imageCapa.src = comic.image
     
         const idStory = document.createElement('h4')
@@ -110,7 +112,7 @@ const criarCards = function(comic){
         serieComic.textContent = comic.series
     
         const infoStory = document.createElement('p')
-        infoStory.textContent = `author: ${comic.writer}  artist: ${comic.artist} colorist: ${comic.colorist} letterer: ${comic.letterer} editor: ${comic.editor} issue: ${comic.issue}`
+        infoStory.innerHTML = `author: ${comic.writer} <br> artist: ${comic.artist} <br> colorist: ${comic.colorist} <br> letterer: ${comic.letterer} <br> editor: ${comic.editor}  <br> issue: ${comic.issue}`
         
     
         imageId.replaceChildren(imageCapa, idStory)

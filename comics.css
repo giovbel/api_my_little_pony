@@ -174,7 +174,8 @@ h3{
  main {
     overflow-y: auto;
     height: 650px; 
-    display: grid;
+    display: flex;
+    justify-content: center;
 } 
 
 
